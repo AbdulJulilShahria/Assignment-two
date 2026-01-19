@@ -12,15 +12,14 @@ html {
     display: flex;
 }
 
-header {
+.nav-bg {
     background-color: rgba(26, 11, 46, 1);
     border-bottom: 1px solid rgba(65, 37, 103, 1);
 }
 
 /* navber related style */
 .navber-container {
-    border: 2px solid red;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -28,18 +27,21 @@ header {
 }
 
 .navber-link {
-    border: 1px solid green;
-    gap: 32px;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
 }
 
 .navber-txt {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 1.88rem;
+    padding-bottom: 1.88rem;
 }
 
-/* .navber-container .navber-txt .gradiant {
-    color: #F7E93F,#FB09B4
-} */
+.navber-container .navber-txt .gradiant {
+    border: 2px solid red;
+    color: linear-gradient(#F7E93F,#FB09B4,#9100F8);
+}
 
 .btn{
     border-radius: 10000px;
@@ -50,11 +52,26 @@ header {
 nav>img{
     display: none;
 }
-
-
-
-
-
+/* banner related style */
+.banner-bg{
+    background-image: url(./assets/hero-bg.png);
+}
+.banner-container{
+    max-width: 75rem;
+    margin: 0 auto ;
+    text-align: center;
+    height: 47rem;
+}
+.btn-two{
+    border: none;
+}
+.banner-img>img{
+    /* background-image: url(./assets/microphone.png); */
+}
+.banner-img{
+    padding-top: 6.30rem;
+    padding-left: 5rem;
+}
 
 
 
@@ -62,6 +79,7 @@ nav>img{
 
 /* responsive design */
 @media screen and (max-width:576px) {
+    /* nav related */
     nav>img{
         display: inline;
         margin-right: 20px;
