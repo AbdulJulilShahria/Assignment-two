@@ -39,8 +39,9 @@ html {
 }
 
 .navber-container .navber-txt .gradiant {
-    border: 2px solid red;
-    color: linear-gradient(#F7E93F,#FB09B4,#9100F8);
+    background-image: linear-gradient(to right, #F7E93F,#FB09B4,#9100F8);
+    background-clip: text;
+    color: transparent;
 }
 
 .btn{
@@ -53,7 +54,7 @@ nav>img{
     display: none;
 }
 /* banner related style */
-.banner-bg{
+/* .banner-bg{
     background-image: url(./assets/hero-bg.png);
 }
 .banner-container{
@@ -67,11 +68,11 @@ nav>img{
 }
 .banner-img>img{
     /* background-image: url(./assets/microphone.png); */
-}
+/* }
 .banner-img{
     padding-top: 6.30rem;
     padding-left: 5rem;
-}
+} */ 
 
 
 
