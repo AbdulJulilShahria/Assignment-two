@@ -117,23 +117,115 @@ nav>img {
 }
 
 .about-card .card {
-    color:  #00FF88;
+    color: #00FF88;
     font-size: 2.6rem;
     font-weight: 900;
-    line-height: 3.63rem; 
+    line-height: 3.63rem;
     text-align: center;
 }
-.about-card .card p{
+
+.about-card .card p {
     color: white;
     opacity: 0.8;
     font-size: 1rem;
     font-weight: 400;
- 
+
 }
-.card-container{
+
+.card-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
+
+/* why choose related style */
+.why-choose {
+    background-color: #230E3D;
+    /* opacity: 40%; */
+}
+
+.choose-card-container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.choose-card-container>h2 {
+    padding-top: 7.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.63rem;
+}
+
+.choose-card {
+    background-color: #35116566;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+}
+
+.choose-card>h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.81rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.choose-card>p {
+    color: white;
+    opacity: 0.6;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.choose-card-grandparent {
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr); */
+    gap: 1.88rem;
+    grid-template-areas:
+        "card-one card-two card-two"
+        "card-one card-three card-three"
+        "card-four card-four card-five";
+}
+
+.card-one {
+    grid-area: card-one;
+}
+
+.card-two {
+    grid-area: card-two;
+}
+
+.card-three {
+    grid-area: card-three;
+}
+
+.card-four {
+    grid-area: card-four;
+}
+
+.card-five {
+    grid-area: card-five;
+}
+
+.choose-card-one {
+    padding-top: 6.72rem;
+    padding-bottom: 6.72rem;
+}
+
+.choose-card-four {
+    padding-top: 1rem;
+    padding-bottom: 1.8rem;
+
+}
+
+
+
+
 
 
 
@@ -166,8 +258,25 @@ nav>img {
     .navber-txt {
         margin-left: 20px;
     }
+
     /* card related style */
-    .card-container{
-        grid-template-columns: repeat(2,1fr);
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* why-choose section */
+    .choose-card-grandparent {
+        grid-template-areas:
+            "card-one"
+            "card-two"
+            "card-three"
+            "card-four"
+            "card-five";
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+    .choose-card-container>h2{
+        font-size: 2rem;
+        padding-top: 2.5rem;
     }
 }
